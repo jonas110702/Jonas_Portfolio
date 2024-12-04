@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    background: rgb(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  span {
+    color:orangered;
+  }
+  
+  .navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    margin-right: 50px;
+    border-bottom: 3px solid transparent;
+    transition: 0, 3s ease;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+  }
+
+  .contact{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+
+  .contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+  }
+  #home {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 7% 0;
+  }
+
+  .img-box img {
+    border-radius: 50%;
+    width: 400px;
+    height: 410px;
+    margin: 10px;
+  }
+  
+  
+  .portfolio {
+    max-width: 800px;
+  }
+
+  .portfolio h2{
+    font-size: 55px ;
+  }
+  .portfolio h3 {
+    font-size: 42px;
+  }
+  
+  .portfolio h1 {
+    font-size: 63px;
+    line-height: 1.2;
+  }
+  
+  .portfolio p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+  }
+  
+  .btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+  }
+  .btn-1 {
+    padding: 15px 28px;
+    background-color: orangered;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .btn-1:hover {
+    background-color:white;
+    color: orangered;
+    border: 2px solid black;
+  }
+  
+  .btn-2 {
+    padding: 15px 28px;
+    background-color: white;
+    opacity: 0.5;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btn-2:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 7%;
+    gap: 10em;
+    background: black;
+  }
+  .about-img img {
+    position: relative;
+    width: 450px;
+    box-shadow: 0 0 50px rgb(176, 64, 24), 0 0 10px orangered;
+    border-radius: 50%;
+  }
+  
+  .about_me h2 {
+    text-align: left;
+    color: white;
+    font-size: 62px;
+  }
+  
+  .about_me h3 {
+    font-size: 62px;
+    color: white;
+  }
+  .about_me p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+  }
+  
+  #services {
+    color: black;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+  }
+  
+  .sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+  }
+  
+  .serv-contain {
+    padding: 90px;
+  }
+  
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .services-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    border: black solid;
+  }
+  
+  .services-list div h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .services-list div a {
+    color: black;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(255, 123, 0);
+    border-radius: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 0 rgb(255, 149, 0), 0 0 15px rgb(255, 128, 0);
+  }
+  
+  .read:hover {
+    box-shadow: 0 0 5px orangered, 0 0 25px orangered, 0 0 100px orangered, 0 0 200px orangered;
+  }
+
+  #experience {
+    padding: 10x;
+    gap: 10em;
+    background: black;
+    line-height: 60px;
+    padding-bottom: 70px;
+  }
+  .sub-title2{
+    text-align: center;
+    font-size: 60px;
+    padding: 100px 0 25px 0;
+    color: white;
+  }
+
+  h3{
+    margin: 3   ;
+  }
+
+  .pro-contain {
+    margin-left: 10px;
+    width: 60px auto;
+    color: #fff;
+    padding: 50px;
+    box-shadow: 0 14px 20px rgba(0,0,0,0.25),0 10p 10px rgba(0,0,0,0.22);
+
+  }
+
+  .bar span{
+    height: 20px;
+    float: left;
+    background:linear-gradient(135deg,rgb(247, 0, 0)0%,rgba(236,0,140,1)100%);
+  }
+  .html{
+    width: 60%;
+    animation:html 3s;
+  }
+  .css{
+    width: 20%;
+    animation:html 3s;
+  }
+
+  .python{
+    width: 50%;
+    animation:html 3s;
+  }
+
+  .java{
+    width: 1%;
+    animation:html 3s;
+  }
+
+
+  .pro-contain li{
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .bar{
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.24),0,1px,2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+  .bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0,10px,10px rgba(0,0,0,0.22);
+
+  }
+
+
+  
+  #contact h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 60px;
+  }
+  
+  .contact_me form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  
+  .contact_me form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact_me form .input-box input,
+  .contact_me form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+  }
+  
+  .contact_me form textarea {
+    height: 20rem;
+  }
+  
+  footer {
+    background-color: #111;
+  }
+  
+  .footercontain {
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  
+  .socialicon {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .socialicon a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.5s;
+  }
+  
+  .socialicon a i:hover {
+    color: rgb(247, 0, 0);
+    transition: 0.5s;
+  }
+  
+  .footerNav {
+    margin: 20px 0;
+  }
+  
+  .footerNav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footerNav ul li a {
+    color: white;
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  
+  .footerNav ul li a:hover {
+    opacity: 1;
+  }
+  
+  .footerBottom {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footerBottom p {
+    color: white;
+  }
+  
+  .designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+  
+  /* Existing CSS styles */
+  
+  @media (max-width: 362px) {
+    /* Tablet Styles */
+    .header {
+      padding: 10px 10px;
+    }
+  
+    .logo{
+      margin-left: 10px;
+    }
+  
+    .navbar a{
+      font-size: 13px;
+      margin-right: 100px;
+  
+    }
+  
+    .portfolio h2 {
+      margin-top: 70px;
+      font-size: 100px;
+    }
+  
+    .portfolio h1 {
+      font-size: 150px;
+      line-height: 1.2;
+    }
+    
+    .img-box img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
